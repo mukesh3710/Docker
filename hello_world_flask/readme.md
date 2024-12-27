@@ -33,12 +33,12 @@ docker build -t flask-app .
 
 2. Run the container:
 ```bash
-docker run -p 5000:5000 flask-app
+docker run -p 6000:6000 flask-app
 ```
 
 3. Access the application:
-- Main endpoint: http://localhost:5000
-- Health check: http://localhost:5000/health
+- Main endpoint: http://localhost:6000
+- Health check: http://localhost:6000/health
 
 ## Local Development
 
@@ -66,7 +66,7 @@ python app.py
 ## Docker Commands
 
 - Build image: `docker build -t flask-app .`
-- Run container: `docker run -p 5000:5000 flask-app`
+- Run container: `docker run -p 6000:6000 flask-app`
 - Stop container: `docker stop $(docker ps -q --filter ancestor=flask-app)`
 - List containers: `docker ps`
 
